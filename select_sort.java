@@ -14,10 +14,10 @@ public class helloworld {
 			for(int j=i;j<a.length;j++)
 				if(a[i]>a[j])
 				{
-						int tmp;
-						tmp = a[i];
-						a[i] = a[j];
-						a[j] = tmp;
+					int tmp;
+					tmp = a[i];
+					a[i] = a[j];
+					a[j] = tmp;
 				}
 	}
 }
