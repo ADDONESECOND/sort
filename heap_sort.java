@@ -8,8 +8,8 @@ public class helloworld {
 		heap_sort(a);
 		System.out.println(Arrays.toString(a));
 		}
-//	¶ÑÅÅĞò
-	public static void swap(int heap[],int i) //½¨¶ÑÊ±½»»»¸¸×Ó½áµã
+//	å †æ’åº
+	public static void swap(int heap[],int i) //å»ºå †æ—¶äº¤æ¢çˆ¶å­ç»“ç‚¹
 	{
 		if(heap[i]<heap[(i-1)/2])
 		{
@@ -22,7 +22,7 @@ public class helloworld {
 			swap(heap,i);
 		}
 	}
-	public static void _swap(int heap[],int j,int len) //³ö¶ÑÊ±½»»»¸¸×Ó½áµã
+	public static void _swap(int heap[],int j,int len) //å‡ºå †æ—¶äº¤æ¢çˆ¶å­ç»“ç‚¹
 	{
 		if((2*j+2)<=len&&heap[2*j+1]>heap[2*j+2]&&heap[j]>heap[2*j+2])
 		{
@@ -45,7 +45,7 @@ public class helloworld {
 	{
 		int[] heap= new int[100];
 		for(int i=0;i<a.length;i++)
-			{heap[i] = a[i];swap(heap,i);} //½¨¶Ñ
+			{heap[i] = a[i];swap(heap,i);} //å»ºå †
 //		System.out.println(Arrays.toString(heap));
 		int top;
 		int len = a.length-1;
