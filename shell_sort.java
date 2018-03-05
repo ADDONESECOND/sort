@@ -8,8 +8,8 @@ public class helloworld {
 		shell_sort(a);
 		System.out.println(Arrays.toString(a));
 		}
-//Ï£¶ûÅÅĞò
-	public static int exch(int[]a,int i,int j) //Êı×éÀï½»»»ÔªËØÎ»ÖÃµÄº¯Êı
+//å¸Œå°”æ’åº
+	public static int exch(int[]a,int i,int j) //æ•°ç»„é‡Œäº¤æ¢å…ƒç´ ä½ç½®çš„å‡½æ•°
 	{
 		if(i == j)
 			return 0;
@@ -19,14 +19,14 @@ public class helloworld {
 		a[j] = tmp;
 		return 0;
 	}
-	public static void shell_sort(int a[]) //Ï£¶ûÅÅĞòËã·¨
+	public static void shell_sort(int a[]) //å¸Œå°”æ’åºç®—æ³•
 	{
-		int h = 0;   //Ï£¶ûÅÅĞòµÄÈ¡Öµ¼ä¸ô
+		int h = 0;   //å¸Œå°”æ’åºçš„å–å€¼é—´éš”
 		while(h<a.length)
-			h = 3*h + 1;//½«¼ä¸ô×î´ó»¯
-		while(h>=1)//Ï£¶ûÅÅĞòËõĞ¡¼ä¸ôÑ­»·
+			h = 3*h + 1;//å°†é—´éš”æœ€å¤§åŒ–
+		while(h>=1)//å¸Œå°”æ’åºç¼©å°é—´éš”å¾ªç¯
 		{
-			int i;       //Ñ­»·ÌåÎª²åÈëÅÅĞò
+			int i;       //å¾ªç¯ä½“ä¸ºæ’å…¥æ’åº
 			for(int j=2;j<a.length;j+=h)
 			{
 				int key = a[j];
@@ -38,7 +38,7 @@ public class helloworld {
 				}
 				a[i+h] = key;
 			}
-			h = h/3;  //ËõĞ¡Ï£¶û¼ä¸ôÖµ£»
+			h = h/3;  //ç¼©å°å¸Œå°”é—´éš”å€¼ï¼›
 		}
 	}
 }
